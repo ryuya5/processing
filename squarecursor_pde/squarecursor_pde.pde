@@ -6,7 +6,8 @@ void setup() {
 void draw() {
   pushStyle();
   rectMode(CENTER);
-  fill(255);
+  colorMode(HSB);
+  fill(frameCount%140, 230, 240);
   rect(mouseX, mouseY, 100, 100);
   popStyle();
   fill(0, 30);
